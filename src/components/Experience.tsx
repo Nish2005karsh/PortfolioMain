@@ -8,15 +8,15 @@ const experiences = [
     active: false,
   },
   {
-    company: "Youtube",
-    role: "Software Engineer",
-    period: "Jan 2017 - Oct 2019",
+    company: "Independent Projects",
+    role: "Technical Skill Development & Training",
+    period: "Jul 2025 – Present",
     description:
-      "At Youtube, I was instrumental in the design team's efforts to revamp the platform's video streaming algorithm, drastically reducing load times by 20% and enhancing video playback quality for users worldwide. My work involved implementing responsive design principles and optimizing code to improve user engagement metrics.",
+      "Continuously expanding my technical expertise through hands-on training in full-stack development, data science fundamentals, workflow automation using n8n, and modern development tools. Actively experimenting with automation workflows and backend integrations to strengthen problem-solving and engineering capabilities.",
     active: true,
   },
   {
-    company: "Nishkarsh Pandey",
+    company: "Independent Projects",
     role: "Independent Software Projects (Calorie Tracker, Student Manager, WikiSnap)",
     period: "Oct 2025 – Ongoing",
     description:

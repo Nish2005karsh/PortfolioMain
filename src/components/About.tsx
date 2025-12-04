@@ -24,13 +24,16 @@ const About = () => {
 
           <div className="space-y-6">
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I'm a passionate self-taught frontend developer and cybersecurity enthusiast. I first learned about computers when I was 10 and have been learning since then.
+              I'm a self-taught developer who has been curious about technology since childhood. Over the years, I’ve built my skills through hands-on projects, virtual internships, and continuous learning.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I create simple responsive websites and web apps for companies. My current main stack is Next.js with Tailwind CSS and TypeScript, but I'm always learning new technologies. I believe in writing clean, maintainable code and creating user experiences that delight.
+              I specialize in creating clean, responsive websites and functional web applications. My main stack includes React, Next.js, Tailwind CSS, and TypeScript, and I also work with backend workflows using n8n, APIs, and Python tools. I enjoy turning ideas into polished, real-world products.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              When I'm not coding, you'll find me exploring new tech, contributing to open source, or sharing knowledge with the developer community.
+              I’m currently expanding my knowledge in full-stack development, data science fundamentals, and workflow automation to build more efficient and scalable applications.
+            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              When I’m not coding, I’m usually learning something new, experimenting with automation workflows, or working on personal projects that help me grow as a developer.
             </p>
 
             <div className="flex flex-wrap gap-3 pt-4">
