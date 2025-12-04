@@ -2,9 +2,9 @@ const experiences = [
   {
     company: "Forage",
     role: "Software Development Virtual Internships",
-    period: "Nov 2019 - Present",
+    period: "Jan 2025 – Jun 2025",
     description:
-      "As a Senior Software Engineer at Google, I played a pivotal role in developing innovative solutions for Google's core search algorithms. Collaborating with a dynamic team of engineers, I contributed to the enhancement of search accuracy and efficiency, optimizing user experiences for millions of users worldwide.",
+      "Completed multiple real-world job simulation programs from Deloitte, Red Bull, Accenture, and other global organizations. These programs involved working on client-focused engineering tasks such as requirement analysis, debugging, API testing, and building software solutions in simulated environments.",
     active: false,
   },
   {
@@ -16,11 +16,11 @@ const experiences = [
     active: true,
   },
   {
-    company: "Apple",
-    role: "Junior Software Engineer",
-    period: "Oct 2014 - Dec 2017",
+    company: "Nishkarsh Pandey",
+    role: "Independent Software Projects (Calorie Tracker, Student Manager, WikiSnap)",
+    period: "Oct 2025 – Ongoing",
     description:
-      "My role at Apple as a Frontend Developer involved crafting responsive and intuitive user interfaces for the company's enterprise-level applications. I worked closely with the UX/UI team to translate design mockups into functional and visually appealing web applications.",
+      "Building a series of practical, real-world applications including a calorie-tracking system, a full student management solution, and WikiSnap — a tool for quick information capture and summarization. These projects focus on clean UI, efficient backend logic, and deploying functional applications that solve everyday problems.",
     active: false,
   },
 ];
@@ -38,8 +38,8 @@ const Experience = () => {
             <div
               key={index}
               className={`p-6 rounded-xl border transition-all duration-300 ${exp.active
-                  ? "bg-primary-foreground text-primary border-primary-foreground"
-                  : "bg-transparent border-primary-foreground/20 hover:border-primary-foreground/40"
+                ? "bg-primary-foreground text-primary border-primary-foreground"
+                : "bg-transparent border-primary-foreground/20 hover:border-primary-foreground/40"
                 }`}
             >
               <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 mb-4">
