@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Github, Linkedin, Twitter, Instagram, Mail, Send, LucideIcon } from "lucide-react";
+import { Github, Linkedin, Twitter, Instagram, Mail, Send, LucideIcon, BookOpen } from "lucide-react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { toast } from "@/hooks/use-toast";
@@ -15,6 +15,7 @@ type SocialLink = {
   href: string;
   label: string;
   color: string;
+  size?: number;
 };
 
 const socialLinks: SocialLink[] = [
@@ -23,6 +24,7 @@ const socialLinks: SocialLink[] = [
   { icon: Linkedin, href: "https://www.linkedin.com/in/nishkarsh-pandey-698215299/", label: "LinkedIn", color: "hover:text-blue-500" },
   { icon: Twitter, href: "https://x.com/Nishkarsh1725", label: "X (Twitter)", color: "hover:text-foreground" },
   { icon: RedditIcon, href: "https://www.reddit.com/user/Proud_Midnight7516/", label: "Reddit", color: "hover:text-orange-500" },
+  { icon: BookOpen, href: "https://dev.to/nish2005karsh", label: "Dev.to", color: "hover:text-foreground" },
 ];
 
 const Contact = () => {
@@ -103,11 +105,11 @@ const Contact = () => {
           {/* Direct Email */}
           <div className="mt-8">
             <a
-              href="mailto:hello@evrenshah.com"
+              href="mailto:nishkarshpandey059@gmail.com"
               className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
             >
               <Mail size={18} />
-              hello@evrenshah.com
+              nishkarshpandey059@gmail.com
             </a>
           </div>
         </div>

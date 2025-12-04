@@ -19,7 +19,7 @@ const Navbar = () => {
           <span className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-primary-foreground text-sm">
             NP
           </span>
-          Nishkarsh Pandey
+          Personal
         </a>
 
         {/* Desktop Navigation */}

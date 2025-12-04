@@ -10,8 +10,8 @@ const projects = [
     tags: ["React", "TypeScript", "n8n", "API", "Clerk(Auth)", "Supabase(DB)", "TailwindCSS", "ShadcnUI"],
     image: "src/assets/screenshot1.png",
     reverse: false,
-    githubLink: "",
-    liveLink: "",
+    githubLink: "https://github.com/Nish2005karsh/Calorie-tracker",
+    liveLink: "#",
   },
   {
     number: "02",
@@ -21,8 +21,8 @@ const projects = [
     tags: ["React", "MongoDB(DB)", "Node.js", "Express", "TailwindCSS", "ShadcnUI"],
     image: "src/assets/screenshot3.png",
     reverse: true,
-    githubLink: "",
-    liveLink: "",
+    githubLink: "https://github.com/Nish2005karsh/Job-Portal",
+    liveLink: "#",
   },
   {
     number: "03",
@@ -32,8 +32,8 @@ const projects = [
     tags: ["React", "Firebase(DB)", "TailwindCSS", "ShadcnUI", "Vapi(Workflow)", "Firebase Storage", "Vercel AI SDK"],
     image: "src/assets/screenshot2.png",
     reverse: false,
-    githubLink: "",
-    liveLink: "",
+    githubLink: "https://github.com/Nish2005karsh/PrepWise",
+    liveLink: "interview-prep-new.vercel.app/sign-in",
   },
 ];
 
