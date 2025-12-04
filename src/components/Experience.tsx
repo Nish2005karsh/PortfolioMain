@@ -1,7 +1,7 @@
 const experiences = [
   {
-    company: "Google",
-    role: "Lead Software Engineer",
+    company: "Forage",
+    role: "Software Development Virtual Internships",
     period: "Nov 2019 - Present",
     description:
       "As a Senior Software Engineer at Google, I played a pivotal role in developing innovative solutions for Google's core search algorithms. Collaborating with a dynamic team of engineers, I contributed to the enhancement of search accuracy and efficiency, optimizing user experiences for millions of users worldwide.",
@@ -37,18 +37,16 @@ const Experience = () => {
           {experiences.map((exp, index) => (
             <div
               key={index}
-              className={`p-6 rounded-xl border transition-all duration-300 ${
-                exp.active
+              className={`p-6 rounded-xl border transition-all duration-300 ${exp.active
                   ? "bg-primary-foreground text-primary border-primary-foreground"
                   : "bg-transparent border-primary-foreground/20 hover:border-primary-foreground/40"
-              }`}
+                }`}
             >
               <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 mb-4">
                 <div className="flex items-center gap-3">
                   <div
-                    className={`w-10 h-10 rounded-full flex items-center justify-center ${
-                      exp.active ? "bg-primary text-primary-foreground" : "bg-primary-foreground/10"
-                    }`}
+                    className={`w-10 h-10 rounded-full flex items-center justify-center ${exp.active ? "bg-primary text-primary-foreground" : "bg-primary-foreground/10"
+                      }`}
                   >
                     <span className="text-sm font-bold">{exp.company.charAt(0)}</span>
                   </div>
