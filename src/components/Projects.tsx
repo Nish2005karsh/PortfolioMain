@@ -4,28 +4,28 @@ import { Button } from "./ui/button";
 const projects = [
   {
     number: "01",
-    title: "Crypto Screener Application",
+    title: "CalorieAI",
     description:
-      "A comprehensive crypto screening tool that allows users to track real-time cryptocurrency prices, market trends, and portfolio performance with beautiful data visualizations.",
-    tags: ["React", "TypeScript", "Chart.js", "API"],
+      "A smart calorie-tracking application that analyzes food images using automated n8n workflows and provides instant nutritional insights. Users can log meals, view daily summaries, and track progress through a simple, responsive interface.",
+    tags: ["React", "TypeScript", "n8n", "API", "Clerk(Auth)", "Supabase(DB)", "TailwindCSS", "ShadcnUI"],
     image: "https://images.unsplash.com/photo-1518546305927-5a555bb7020d?w=600&q=80",
     reverse: false,
   },
   {
     number: "02",
-    title: "Euphoria - E-commerce Platform",
+    title: "JobHunt",
     description:
-      "A modern e-commerce website template for apparel brands featuring product catalogs, shopping cart functionality, and seamless checkout experience.",
-    tags: ["Next.js", "Stripe", "TailwindCSS", "Prisma"],
+      "A full-stack MERN job-applying platform where users can explore job listings, create profiles, and apply instantly. Includes company dashboards, application tracking, and a clean, streamlined UI inspired by modern job portals.",
+    tags: ["React", "MongoDB(DB)", "Node.js", "Express", "TailwindCSS", "ShadcnUI"],
     image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&q=80",
     reverse: true,
   },
   {
     number: "03",
-    title: "Blog Website Template",
+    title: "PrepWise",
     description:
-      "A clean, minimalist blog template with markdown support, dark mode, SEO optimization, and excellent typography for content creators.",
-    tags: ["Next.js", "MDX", "Vercel", "SEO"],
+      "An interactive interview preparation platform built with Next.js, featuring voice-based practice sessions powered by Vapi and secure content storage via Firebase Storage. Designed to help users practice, learn, and improve their interview confidence",
+    tags: ["React", "Firebase(DB)", "TailwindCSS", "ShadcnUI", "Vapi(Workflow)", "Firebase Storage", "Vercel AI SDK"],
     image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=600&q=80",
     reverse: false,
   },
@@ -43,9 +43,8 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className={`grid lg:grid-cols-2 gap-8 items-center ${
-                project.reverse ? "lg:flex-row-reverse" : ""
-              }`}
+              className={`grid lg:grid-cols-2 gap-8 items-center ${project.reverse ? "lg:flex-row-reverse" : ""
+                }`}
             >
               <div className={`${project.reverse ? "lg:order-2" : ""}`}>
                 <div className="relative group overflow-hidden rounded-2xl">
@@ -81,11 +80,11 @@ const Projects = () => {
                 </div>
 
                 <div className="flex gap-4">
-                  <Button variant="outline" size="sm" className="border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground hover:text-primary">
+                  <Button variant="outline" size="sm" className="border-primary-foreground/20 text-secondary-foreground hover:bg-primary-foreground hover:text-primary">
                     <Github className="mr-2 h-4 w-4" />
                     Code
                   </Button>
-                  <Button variant="outline" size="sm" className="border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground hover:text-primary">
+                  <Button variant="outline" size="sm" className="border-primary-foreground/20 text-secondary-foreground hover:bg-primary-foreground hover:text-primary">
                     <ExternalLink className="mr-2 h-4 w-4" />
                     Live Demo
                   </Button>
