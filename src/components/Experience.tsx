@@ -1,0 +1,74 @@
+const experiences = [
+  {
+    company: "Google",
+    role: "Lead Software Engineer",
+    period: "Nov 2019 - Present",
+    description:
+      "As a Senior Software Engineer at Google, I played a pivotal role in developing innovative solutions for Google's core search algorithms. Collaborating with a dynamic team of engineers, I contributed to the enhancement of search accuracy and efficiency, optimizing user experiences for millions of users worldwide.",
+    active: false,
+  },
+  {
+    company: "Youtube",
+    role: "Software Engineer",
+    period: "Jan 2017 - Oct 2019",
+    description:
+      "At Youtube, I was instrumental in the design team's efforts to revamp the platform's video streaming algorithm, drastically reducing load times by 20% and enhancing video playback quality for users worldwide. My work involved implementing responsive design principles and optimizing code to improve user engagement metrics.",
+    active: true,
+  },
+  {
+    company: "Apple",
+    role: "Junior Software Engineer",
+    period: "Oct 2014 - Dec 2017",
+    description:
+      "My role at Apple as a Frontend Developer involved crafting responsive and intuitive user interfaces for the company's enterprise-level applications. I worked closely with the UX/UI team to translate design mockups into functional and visually appealing web applications.",
+    active: false,
+  },
+];
+
+const Experience = () => {
+  return (
+    <section id="experience" className="py-20 section-dark">
+      <div className="container mx-auto px-6">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+          My <span className="underline decoration-4 underline-offset-4">Experience</span>
+        </h2>
+
+        <div className="max-w-4xl mx-auto space-y-6">
+          {experiences.map((exp, index) => (
+            <div
+              key={index}
+              className={`p-6 rounded-xl border transition-all duration-300 ${
+                exp.active
+                  ? "bg-primary-foreground text-primary border-primary-foreground"
+                  : "bg-transparent border-primary-foreground/20 hover:border-primary-foreground/40"
+              }`}
+            >
+              <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 mb-4">
+                <div className="flex items-center gap-3">
+                  <div
+                    className={`w-10 h-10 rounded-full flex items-center justify-center ${
+                      exp.active ? "bg-primary text-primary-foreground" : "bg-primary-foreground/10"
+                    }`}
+                  >
+                    <span className="text-sm font-bold">{exp.company.charAt(0)}</span>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-lg">{exp.role} at {exp.company}</h3>
+                  </div>
+                </div>
+                <span className={`text-sm ${exp.active ? "text-primary/70" : "text-primary-foreground/60"}`}>
+                  {exp.period}
+                </span>
+              </div>
+              <p className={`text-sm leading-relaxed ${exp.active ? "text-primary/80" : "text-primary-foreground/70"}`}>
+                {exp.description}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Experience;
