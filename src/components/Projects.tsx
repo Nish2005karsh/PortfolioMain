@@ -8,8 +8,10 @@ const projects = [
     description:
       "A smart calorie-tracking application that analyzes food images using automated n8n workflows and provides instant nutritional insights. Users can log meals, view daily summaries, and track progress through a simple, responsive interface.",
     tags: ["React", "TypeScript", "n8n", "API", "Clerk(Auth)", "Supabase(DB)", "TailwindCSS", "ShadcnUI"],
-    image: "https://images.unsplash.com/photo-1518546305927-5a555bb7020d?w=600&q=80",
+    image: "src/assets/screenshot1.png",
     reverse: false,
+    githubLink: "",
+    liveLink: "",
   },
   {
     number: "02",
@@ -17,8 +19,10 @@ const projects = [
     description:
       "A full-stack MERN job-applying platform where users can explore job listings, create profiles, and apply instantly. Includes company dashboards, application tracking, and a clean, streamlined UI inspired by modern job portals.",
     tags: ["React", "MongoDB(DB)", "Node.js", "Express", "TailwindCSS", "ShadcnUI"],
-    image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&q=80",
+    image: "src/assets/screenshot3.png",
     reverse: true,
+    githubLink: "",
+    liveLink: "",
   },
   {
     number: "03",
@@ -26,8 +30,10 @@ const projects = [
     description:
       "An interactive interview preparation platform built with Next.js, featuring voice-based practice sessions powered by Vapi and secure content storage via Firebase Storage. Designed to help users practice, learn, and improve their interview confidence",
     tags: ["React", "Firebase(DB)", "TailwindCSS", "ShadcnUI", "Vapi(Workflow)", "Firebase Storage", "Vercel AI SDK"],
-    image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=600&q=80",
+    image: "src/assets/screenshot2.png",
     reverse: false,
+    githubLink: "",
+    liveLink: "",
   },
 ];
 
@@ -80,13 +86,27 @@ const Projects = () => {
                 </div>
 
                 <div className="flex gap-4">
-                  <Button variant="outline" size="sm" className="border-primary-foreground/20 text-secondary-foreground hover:bg-primary-foreground hover:text-primary">
-                    <Github className="mr-2 h-4 w-4" />
-                    Code
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="border-primary-foreground/20 text-secondary-foreground hover:bg-primary-foreground hover:text-primary"
+                    asChild
+                  >
+                    <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                      <Github className="mr-2 h-4 w-4" />
+                      Code
+                    </a>
                   </Button>
-                  <Button variant="outline" size="sm" className="border-primary-foreground/20 text-secondary-foreground hover:bg-primary-foreground hover:text-primary">
-                    <ExternalLink className="mr-2 h-4 w-4" />
-                    Live Demo
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="border-primary-foreground/20 text-secondary-foreground hover:bg-primary-foreground hover:text-primary"
+                    asChild
+                  >
+                    <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="mr-2 h-4 w-4" />
+                      Live Demo
+                    </a>
                   </Button>
                 </div>
               </div>
