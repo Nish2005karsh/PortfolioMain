@@ -1,4 +1,5 @@
-import aboutImage from "@/assets/about-illustration.png";
+// import aboutImage from "@/assets/about-illustration.png";
+import screenshot4 from "@/public/screenshot4.jpg";
 
 const About = () => {
   return (
@@ -13,7 +14,7 @@ const About = () => {
             <div className="relative">
               <div className="w-64 h-64 md:w-80 md:h-80 rounded-3xl overflow-hidden bg-secondary border-4 border-primary">
                 <img
-                  src={aboutImage}
+                  src={screenshot4}
                   alt="About me illustration"
                   className="w-full h-full object-cover"
                 />

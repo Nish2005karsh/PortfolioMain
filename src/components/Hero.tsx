@@ -1,5 +1,5 @@
 import { Github, Linkedin, Twitter, Instagram } from "lucide-react";
-// import heroImage from "@/assets/hero-illustration.png";
+import heroImage from "@/assets/hero-illustration.png";
 
 const socialLinks = [
   { icon: Github, href: "https://github.com/Nish2005karsh", label: "GitHub" },
@@ -50,7 +50,7 @@ const Hero = () => {
             <div className="relative">
               <div className="w-72 h-72 md:w-96 md:h-96 rounded-full bg-secondary overflow-hidden">
                 <img
-                  src={/public/screenshot4.jpg}
+                  src={heroImage}
                   alt="Developer illustration"
                   className="w-full h-full object-cover"
                 />
