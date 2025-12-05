@@ -32,11 +32,13 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:block">
-          <Button className="rounded-full px-6">
-            Resume
-            <svg className="ml-2 w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <path d="M7 17L17 7M17 7H7M17 7V17" />
-            </svg>
+          <Button className="rounded-full px-6" asChild>
+            <a href="/RResume.pdf" target="_blank" rel="noopener noreferrer">
+              Resume
+              <svg className="ml-2 w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M7 17L17 7M17 7H7M17 7V17" />
+              </svg>
+            </a>
           </Button>
         </div>
 
@@ -64,11 +66,13 @@ const Navbar = () => {
                 {link.name}
               </a>
             ))}
-            <Button className="rounded-full w-full">
-              Resume
-              <svg className="ml-2 w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M7 17L17 7M17 7H7M17 7V17" />
-              </svg>
+            <Button className="rounded-full w-full" asChild>
+              <a href="/RResume.pdf" target="_blank" rel="noopener noreferrer">
+                Resume
+                <svg className="ml-2 w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M7 17L17 7M17 7H7M17 7V17" />
+                </svg>
+              </a>
             </Button>
           </div>
         </div>
