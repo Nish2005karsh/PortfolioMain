@@ -8,7 +8,7 @@ const projects = [
     description:
       "A smart calorie-tracking application that analyzes food images using automated n8n workflows and provides instant nutritional insights. Users can log meals, view daily summaries, and track progress through a simple, responsive interface.",
     tags: ["React", "TypeScript", "n8n", "API", "Clerk(Auth)", "Supabase(DB)", "TailwindCSS", "ShadcnUI"],
-    image: "src/assets/screenshot1.png",
+    image: "/screenshot1.png",
     reverse: false,
     githubLink: "https://github.com/Nish2005karsh/Calorie-tracker",
     liveLink: "#",
@@ -19,7 +19,7 @@ const projects = [
     description:
       "A full-stack MERN job-applying platform where users can explore job listings, create profiles, and apply instantly. Includes company dashboards, application tracking, and a clean, streamlined UI inspired by modern job portals.",
     tags: ["React", "MongoDB(DB)", "Node.js", "Express", "TailwindCSS", "ShadcnUI"],
-    image: "src/assets/screenshot3.png",
+    image: "/screenshot3.png",
     reverse: true,
     githubLink: "https://github.com/Nish2005karsh/Job-Portal",
     liveLink: "#",
@@ -30,7 +30,7 @@ const projects = [
     description:
       "An interactive interview preparation platform built with Next.js, featuring voice-based practice sessions powered by Vapi and secure content storage via Firebase Storage. Designed to help users practice, learn, and improve their interview confidence",
     tags: ["React", "Firebase(DB)", "TailwindCSS", "ShadcnUI", "Vapi(Workflow)", "Firebase Storage", "Vercel AI SDK"],
-    image: "src/assets/screenshot2.png",
+    image: "/screenshot2.png",
     reverse: false,
     githubLink: "https://github.com/Nish2005karsh/PrepWise",
     liveLink: "interview-prep-new.vercel.app/sign-in",
